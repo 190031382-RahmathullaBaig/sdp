@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMT Cities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Prasang Singhal, Paras Patidar, Vijay Deshwal">
+    <meta name="keywords" content="voyager, voyager.com, online tickets booking, flight tickets, bus tickets, train tickets">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/Logos/logo.ico" type="image">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Raleway:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+        p{
+            text-align: center;
+        }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 10%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+    margin-left: 10%;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px; 
+  color: black; 
+  display: block; 
+  width: 10%;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; 
+}
+    </style>
+    <script>
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg">
+
+    <header>
+        <div class="logo">
+            <h1 class="voyager">SMT Cities</h1>
+            <h3>One Stop For <span class="dot">.</span> Complete InFormation <span class="dot">.</span></h3>
+        </div>
+        
+        <div class="navbar">
+            <ul>
+                <a class="login" href="mainpage.html">
+                    <li>HOME</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About Us</li>
+                </a>
+                <a href="contactus.html">
+                    <li>Contact Us</li>
+                </a>
+                <a href="home.html">
+                    <li>Log Out</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="wtv">
+        <div class="welcome" style="text-align: center"> <span class="initial">Welcome</span> <span class="last"> !</span> </div>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+    <ol id="myUL">
+      <li><a href="vijayawada.html" class="menu">Vijayawada</a></li>
+      <li><a href="vijayawada.html" class="menu">Chennai</a></li>
+    
+      <li><a href="vijayawada.html" class="menu">Mumbai</a></li>
+      <li><a href="vijayawada.html" class="menu">Lucknow</a></li>
+    
+      <li><a href="vijayawada.html" class="menu">Hyderabad</a></li>
+      <li><a href="vijayawada.html" class="menu">Bangalore</a></li>
+      <!-- <li><a href="#">Cindy</a></li> -->
+    </ol>
+    <div class="container">
+        <a name="flight"></a><br>
+        <h4 id="category" class="flight">Cities</h4>
+
+        <div class="row" style="margin-top: 50px;" id="flights">
+
+
+            <!--Delhi - Jaipur-->
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9p7sib989iv43l5ik363fav9b7-20210626233053.Medi.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;">Vijayawada</span>
+                        <p>The Place of Victory! <br> <br> <span><p class="makebold"><sup>Andhra Pradesh</sup></p></span></p>
+
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="vijayawada.html" class="white-text ">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://media.istockphoto.com/photos/chennai-nightscape-picture-id469550423?b=1&k=20&m=469550423&s=170667a&w=0&h=Kbkxmf63611hH5sGsvmTbBrwmuAn2-l2JWi2kfv3xJs=">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;">Chennai</span>
+                        <p>City of Flyovers Gateway of South India! <br> <br> <span><p class="makebold">TamilNadu<sup></sup></p></span></p>
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="#" class="white-text ">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://media.istockphoto.com/photos/gateway-of-india-mumbai-maharashtra-monument-landmark-famous-place-picture-id1307189136?b=1&k=20&m=1307189136&s=170667a&w=0&h=F-BSrbduokK7pz1AEOwOGuoDe2xd28wnSyZpll4Jzks=">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;"> Mumbai</span>
+                        <p>THE CITY OF SUCCESS ! <br> <br> <span><p class="makebold">Maharashtra<sup></sup></p></span></p>
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="#" class="white-text ">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547716467-fdb9102f1ac4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHVja25vd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;">Lucknow</span>
+                        <p>This charming city with most amazing tourist attractions in India!<br> <br> <span><p class="makebold">Uttar Pradesh<sup></sup></p></span></p>
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="#" class="white-text ">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551161242-b5af797b7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHlkZXJhYmFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;">Hyderabad</span>
+                        <p>The City Of Biryani! <br> <br> <span><p class="makebold">Telangana<sup></sup></p></span></p>
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="#" class="white-text ">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s4 hoverable">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://cms.qz.com/wp-content/uploads/2017/08/bangalore1-reuters-traffic-moves-along-a-road-in-the-southern-indian-city-of-bangalore-december-14-2005.jpg?quality=75&strip=all&w=1600&h=900&crop=1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title" style="text-align: center;">Bangalore</span>
+                        <p> Silicon Valley of India or IT capital of India! <br> <br> <span><p class="makebold">Karnataka<sup></sup></p></span></p>
+                    </div>
+                    <div class="card-action red darken-4">
+                        <a href="#" class="white-text">View</a>
+                    </div>
+                </div>
+            </div>
+    <footer class="section teal darken-3">
+        <p class="flow-text white-text center" style="font-family: Montserrat; font-size: 35px;">SMT Cities &copy; 2022</p>
+    </footer>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>
